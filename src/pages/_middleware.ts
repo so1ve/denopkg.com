@@ -18,7 +18,7 @@ export default async (req: NextRequest) => {
   }
 
   if (!version) {
-    return NextResponse.redirect(`/${owner}/${repo}@master${rest}`)
+    return NextResponse.redirect(`/${owner}/${repo}@main${rest}`)
   }
 
   if (version === 'latest') {
